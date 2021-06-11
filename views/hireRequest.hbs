@@ -1,0 +1,44 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.checked {
+  color: orange;
+}
+</style>
+<div class="row text-center">
+    <h1>Hire Requests</h1>
+</div>
+<br>
+<div class="row text-center">
+    {{#each items}}
+    <div class="column" style="width:30%">
+            <h3>{{this.fullname}}</h3>
+            <h4>{{this.address}}</h4>
+            <hr>
+            <p>Room Size: {{this.roomsize}}</p>
+            <hr>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            <hr>
+            <form method="POST" action="confirmRequest">
+                <button class="button-primary" name="custUser" value={{this.user}}  type="submit">
+                  Confirm 
+                </button>
+                <button
+                class="button-primary" name="decline"value={{this.user}} type="submit">Decline</input>
+                </button>
+            </form>
+    </div>
+    {{/each}}
+    <form method="POST" action="back">
+                <button class="button-primary" name="back" value="back"  type="submit">
+                  Back
+                </button>
+                
+            </form>
+</div>
+
+
+

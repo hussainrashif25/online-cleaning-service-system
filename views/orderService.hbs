@@ -1,0 +1,29 @@
+<div class="row text-center">
+  <h1>Order Serivce</h1>
+</div>
+<br>
+<div class="row text-center">
+    {{#each maids}}
+    <div class="column" style="width:30%">
+            <h3>{{this.fullname}}</h3>
+            <h4>{{this.address}}</h4>
+            <hr>
+            <p>${{this.rate}}/sq.ft</p>
+            <hr>
+            <p>Languages: {{this.languages}}</p>
+            <p>Visits: {{this.visits}}</p>
+            <hr>
+            <form method="POST" action="confirmHire">
+                {{!-- <input name="{{this.username}}" class="button button-primary" id="confirm" type="submit" value='Confirm'></input> --}}
+                <button class="button-primary" name="workUser" value={{this.username}} type="submit">
+                  Hire
+                </button>
+            </form>
+    </div>
+    {{/each}}
+</div>
+{{!-- <script>
+  function myFunction(username) {
+    $.post('/confirmHire', username)
+  }
+</script> --}}

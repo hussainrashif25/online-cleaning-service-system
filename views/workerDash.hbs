@@ -1,0 +1,96 @@
+<div class="container">
+    <div class="text-center">
+        <h1>Worker Dashboard</h1>
+    </div>
+    <br/>
+    <div class="row">
+        <div class="one-third column">
+            <table class="u-pull-width">
+                <thead>
+                    <tr>
+                        <th class="text-center">Personal Profile</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>{{fullname}}</td>                                               
+                    </tr>
+                    <tr>
+                        <td>{{username}}</td> 
+                    </tr>
+                    <tr>
+                        <td>{{address}}</td>
+                    </tr>
+                    <tr>
+                        <td>Languages: {{languages}}</td>
+                    </tr>
+                    <tr>
+                        <td>Visits: {{visits}}</td>
+                    </tr>
+                    <tr>
+                        <td>Price: ${{rate}}</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">
+                            <a class="button" href="http://localhost:3000/editprofile">Edit</a>
+                            <form method="POST" action="logout">
+                                <input class="button button-primary" type="submit" value='Logout'></input>
+                            </form>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="one-third column">
+            <table class="u-full-width">
+                <thead>
+                    <tr>
+                        <h6>You are currently: {{availability}}</h6>
+        <form method="post">
+            <input name="toggleAvailability" value="Toggle Availability" type="submit">
+        </form>
+                        <th class="text-center">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="text-center">
+                            <a class="button" href="http://localhost:3000/hireRequest"> Check Requests</a>
+                        </td>
+                    </tr>
+                    <br/>
+                </tbody>
+            </table>
+        </div>
+        <div class="one-third column">
+            <table class="u-pull-right">
+                <thead>
+                    <tr>
+                        <th class="text-center">Payment</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="text-center">{{accountBalance}}</td>                                               
+                    </tr>
+                    <tr>
+                        <td class="text-center">
+                            
+                
+                  <form method="post">
+                      <label>Ammount:</label>
+                      <input name="withdrawammount" placeholder="Enter ammount" type="withdraw" required>
+                            <input name="withdraw" value="Withdraw" type="submit"> 
+                            </form>                       
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            
+        </div>
+    </div>
+</div>
+
+</div>
+
+<br/>

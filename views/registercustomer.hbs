@@ -1,0 +1,65 @@
+<div class="container">
+    <div class="row text-center">
+        <h1>Register as a Customer</h1>
+    </div>
+    <br>
+        <form method="POST">
+        <div class="row">
+            <div class="column one-half">
+                <label>Email:</label>
+                <input name="username" placeholder="Enter E-Mail" type="email" required>
+                <label>Full Name</label>
+                <input name="fullname" placeholder="Enter Full Name" type="text" required>
+                <label>City</label>
+                <input name="city" placeholder="Toronto" type="text" required>
+                <label>Postal Code</label>
+                <input name="postalcode" placeholder="MK2 8P9" type="text" required>
+                
+            </div>
+            <div class="column one-half">
+                <label>Password:</label>
+                <input name="password" placeholder="Enter Password" type="password" required>
+                <label>Address:</label>
+                <input name="address" placeholder="1234 Main St." type="text" required> 
+                <label>Province</label>
+                <select name="province" required>
+                    <option value="">Choose...</option>
+                    <option value="alberta">Alberta</option>
+                    <option value="britishcolumbia">British Columbia</option>
+                    <option value="manitoba">Manitoba</option>
+                    <option value="newbrunswick">New Brunswick</option>
+                    <option value="NFL">Newfoundland and Labrador</option>
+                    <option value="novascotia">Nova Scotia</option>
+                    <option value="ontario">Ontario</option>
+                    <option value="PEI">Prince Edward Island</option>
+                    <option value="quebec">Quebec</option>
+                    <option value="saskatchewan">Saskatchewan</option>
+                    <option value="NW">Northwest Territories</option>
+                    <option value="nunavut">Nunavut</option>
+                    <option value="yukon">Yukon</option>
+                </select>
+                <label>Approximate Room Size (sqft)</label>
+                <select name="roomsize" required>
+                    <option value="">Choose...</option>
+                    <option value="10">10</option>
+                    <option value="20">20</option>
+                    <option value="30">30</option>
+                    <option value="40">40</option>
+                    <option value="50">50</option>
+                    <option value="60">60</option>
+                    <option value="70">70</option>
+                    <option value="80">80</option>
+                    <option value="90">90</option>
+                    <option value="100">100</option>
+                    <option value="110">110</option>
+                    <option value="120">120</option>
+                    <option value="130">130</option>
+                </select>
+            </div>
+        </div>
+        <br>
+        <div class="text-center">
+            <input name="register" value="Authenticate and Submit" type="submit">
+        </div>
+        </form>
+</div>
